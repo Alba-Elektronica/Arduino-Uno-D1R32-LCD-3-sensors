@@ -10,16 +10,23 @@ void setup(){
   lcd.init();                      // initialize the lcd 
   lcd.backlight();
 
+  Serial.begin(9600); 
   pinMode (ledPin, OUTPUT);
 }
 
 void loop(){
   sensorValue = analogRead (sensorPin);
+  sensorValue = 120 * log10(sensorValue/5);
+  Serial.println(sensorValue);
+
   digitalWrite (ledPin, HIGH);
-  delay (sensorValue);
+  
+  delay (100);
   digitalWrite (ledPin, LOW);
   delay (sensorValue);
+  
   lcd.print("Sensor val: ");
   lcd.print(sensorValue);
+
   delay(1000);
 }
