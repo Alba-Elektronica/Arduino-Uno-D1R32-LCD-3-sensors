@@ -1,6 +1,6 @@
 # Arduino-Uno-R3-LCD-3-sensors
 
-This type of Arduino Uno has on board integrated Wifi and Ble
+This type of Arduino Uno has on board integrated Wifi and Ble. 
 
 The LCD displays text on two lines
 
