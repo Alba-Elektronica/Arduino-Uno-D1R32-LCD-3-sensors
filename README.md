@@ -15,5 +15,7 @@ Components:
 - Power cable arduino
 
 The experiments combine LCD with one or two sensors. It is possible to use all the sensors at once.
-
+- DHT11-LCD - combines the temperature sensor DHT11 with LCD on R32. 
+- Rain-LCD - combines the sensor measuring the amount of rain with LCD on R32
+- Photo-LCD - measures the amount of light on R32 and displays output on R32
 
